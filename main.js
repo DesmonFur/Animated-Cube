@@ -48,6 +48,41 @@ function onWindowResize() {
 	renderer.setSize(window.innerWidth, window.innerHeight);
 }
 
+// function bmwLoad(){
+//  const loader = new THREE.GLTFLoader();
+// //  const url = './bmw_i8/scene.gltf'
+//  loader.load(
+// 	// resource URL
+// 	'./bmw_i8/scene.gltf',
+// 	// called when the resource is loaded
+// 	function ( gltf ) {
+
+// 		scene.add( gltf.scene );
+
+// 		gltf.animations; // Array<THREE.AnimationClip>
+// 		gltf.scene; // THREE.Scene
+// 		gltf.scenes; // Array<THREE.Scene>
+// 		gltf.cameras; // Array<THREE.Camera>
+// 		gltf.asset; // Object
+
+// 	},
+// 	// called while loading is progressing
+// 	function ( xhr ) {
+
+// 		console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
+
+// 	},
+// 	// called when loading has errors
+// 	function ( error ) {
+
+// 		console.log(error );
+
+// 	}
+// );
+ 
+// }
+
 window.addEventListener('resize', onWindowResize, false)
 init();
+// bmwLoad()
 animate();
